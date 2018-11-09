@@ -12,6 +12,8 @@
 		32468D8F21928FC8004A1039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32468D8D21928FC8004A1039 /* Main.storyboard */; };
 		32468D9121928FC8004A1039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32468D9021928FC8004A1039 /* Assets.xcassets */; };
 		32468D9421928FC8004A1039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32468D9221928FC8004A1039 /* LaunchScreen.storyboard */; };
+		32468D9D219293C2004A1039 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32468D9C219293C2004A1039 /* ARKit.framework */; };
+		32C0C39D2195109A0097D5BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0C39C2195109A0097D5BD /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		32468D9021928FC8004A1039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32468D9321928FC8004A1039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32468D9521928FC8004A1039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32468D9C219293C2004A1039 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		32C0C39C2195109A0097D5BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32468D9D219293C2004A1039 /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				32468D8821928FC8004A1039 /* face */,
 				32468D8721928FC8004A1039 /* Products */,
+				32468D9B219293C2004A1039 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +62,21 @@
 			children = (
 				32468D8921928FC8004A1039 /* AppDelegate.swift */,
 				32468D8B21928FC8004A1039 /* ViewController.swift */,
+				32C0C39C2195109A0097D5BD /* Extensions.swift */,
 				32468D8D21928FC8004A1039 /* Main.storyboard */,
 				32468D9021928FC8004A1039 /* Assets.xcassets */,
 				32468D9221928FC8004A1039 /* LaunchScreen.storyboard */,
 				32468D9521928FC8004A1039 /* Info.plist */,
 			);
 			path = face;
+			sourceTree = "<group>";
+		};
+		32468D9B219293C2004A1039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32468D9C219293C2004A1039 /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32468D8C21928FC8004A1039 /* ViewController.swift in Sources */,
+				32C0C39D2195109A0097D5BD /* Extensions.swift in Sources */,
 				32468D8A21928FC8004A1039 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TCJVBBT3L6;
 				INFOPLIST_FILE = face/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TCJVBBT3L6;
 				INFOPLIST_FILE = face/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
